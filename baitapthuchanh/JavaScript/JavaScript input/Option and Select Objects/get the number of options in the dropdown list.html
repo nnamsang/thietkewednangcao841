@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<form>
+<select id="mySelect">
+  <option>Apple</option>
+  <option>Pear</option>
+  <option>Banana</option>
+  <option>Orange</option>
+</select>
+</form>
+
+<p>There are <span id="demo">0</span> options in the list.</p>
+
+<script>
+document.getElementById("demo").innerHTML =
+document.getElementById("mySelect").length;
+</script>
+
+</body>
+</html>
