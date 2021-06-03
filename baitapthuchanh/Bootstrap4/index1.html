@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- https://icons.getbootstrap.com/ -->
+	<!-- https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp -->
+	<title>Bootstrap tutorial</title>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+	<style type="text/css">
+		.card {
+			margin-top: 10px;
+		}
+		.card .card-body {
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+  <div class="container">
+  	<form method="post" id="MyForm">
+  		<div class="form-group">
+	  		<label for="title">Title:</label>
+	  		<input required="true" type="text" name="title" class="form-control" id="title">
+	  	</div>
+	  	<div class="form-group">
+	  		<label for="description">Description:</label>
+	  		<input required="true" type="text" name="description" class="form-control" id="description">
+	  	</div>
+	  	<div class="form-group">
+	  		<label for="thumbnail">Thumbnail:</label>
+	  		<input required="true" type="text" name="thumbnail" class="form-control" id="thumbnail">
+	  	</div>
+	  	<div class="form-group">
+	  		<label for="price">Price:</label>
+	  		<input field-name="price" required="true" type="number" step="0.01" name="price" class="form-control" id="price">
+	  	</div>
+	  	<button type="submit" class="btn btn-success" id="add_product">Add Product</button>
+	  	<button type="reset" class="btn btn-warning">Reset</button>
+	  	<button type="button" class="btn btn-info" id="change_color_btn">Change Color</button>
+  	</form>
+
+  	<table class="table table-bordered table-striped">
+  		<thead>
+  			<tr>
+  				<th>No</th>
+  				<th>Thumbnail</th>
+  				<th>Title</th>
+  				<th>Description</th>
+  				<th>Price</th>
+  			</tr>
+  		</thead>
+  		<tbody id="result">
+  		</tbody>
+  	</table>
+  </div>
+
+  <script type="text/javascript" src="js/index1.js"></script>
+</body>
+</html>

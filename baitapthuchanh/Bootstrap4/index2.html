@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BT2162 - Web Tin Tuc - Bootstrap/jQuery</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+	<style type="text/css">
+		.navbar-nav .nav-item {
+			border-right: solid #f15757 2px;
+		}
+
+		.carousel.slide img {
+			width: 100%;
+			height: 450px;
+		}
+
+		#section_2 button {
+			width: 100% !important;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<!-- Header -->
+		<!-- Logo & Ads -->
+		<div class="row">
+			<div class="col-md-5">
+				<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1587623413/qhwncq3wtjkrsyke6ayw.png" style="max-height: 80px; max-width: 100%">
+			</div>
+			<div class="col-md-7">
+				<img src="https://res.cloudinary.com/ziczacgroup/image/upload/v1608611098/asbezpvx4yzt3gbqwtkz.jpg" style="width: 100%">
+			</div>
+		</div>
+		<!-- Logo & Ads End -->
+		<!-- Menu Start -->
+		<nav class="navbar navbar-expand-sm bg-danger navbar-dark" style="margin-top: 10px;">
+		  <ul class="navbar-nav">
+		    <li class="nav-item active">
+		      <a class="nav-link" href="#">Home</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="#">The Firm</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="#">Private Placement Program</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="#">Asset Management</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="#">Investment</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="#">Library</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="#">Contact Us</a>
+		    </li>
+		  </ul>
+		</nav>
+		<!-- Menu End -->
+		<!-- Header End -->
+		<!-- Main Start -->
+		<!-- Banner Start -->
+		<div id="demo" class="carousel slide" data-ride="carousel">
+
+		  <!-- Indicators -->
+		  <ul class="carousel-indicators">
+		    <li data-target="#demo" data-slide-to="0" class="active"></li>
+		    <li data-target="#demo" data-slide-to="1"></li>
+		    <li data-target="#demo" data-slide-to="2"></li>
+		  </ul>
+
+		  <!-- The slideshow -->
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="https://www.extremetech.com/wp-content/uploads/2019/12/SONATA-hero-option1-764A5360-edit.jpg" alt="Los Angeles">
+		      <div class="carousel-caption">
+		        <h3>Los Angeles</h3>
+		        <p>We had such a great time in LA!</p>
+		      </div> 
+		    </div>
+		    <div class="carousel-item">
+		      <img src="https://www.u-carmen.com/wp-content/uploads/2020/07/4.jpg" alt="Chicago">
+		      <div class="carousel-caption">
+		        <h3>Los Angeles</h3>
+		        <p>We had such a great time in LA!</p>
+		      </div> 
+		    </div>
+		    <div class="carousel-item">
+		      <img src="https://news.hyundaimotorgroup.com/upload/image/mp210/mp210-39694-234687.jpg" alt="New York">
+		      <div class="carousel-caption">
+		        <h3>Los Angeles</h3>
+		        <p>We had such a great time in LA!</p>
+		      </div> 
+		    </div>
+		  </div>
+
+		  <!-- Left and right controls -->
+		  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+		    <span class="carousel-control-prev-icon"></span>
+		  </a>
+		  <a class="carousel-control-next" href="#demo" data-slide="next">
+		    <span class="carousel-control-next-icon"></span>
+		  </a>
+
+		</div>
+		<!-- Banner End -->
+		<!-- Section: Private Placement Program -->
+		<div class="row" style="margin-top: 15px; margin-bottom: 15px;">
+			<div class="col-md-6">
+				<div class="card" style="padding: 10px; border: 2px solid #dc3545;">
+					Nóng: Hải Dương thêm 4 ca dương tính với SARS-CoV-2, riêng ổ dịch Kim Thành 3 ca - Texas hứng chịu thêm thảm họa giữa giá rét kỷ lục
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-2">
+						<img class="rounded-circle" src="https://news.hyundaimotorgroup.com/upload/image/mp210/mp210-39694-234687.jpg" style="width: 60px; height: 60px;">
+					</div>
+					<div class="col-md-2">
+						<img class="rounded-circle" src="https://news.hyundaimotorgroup.com/upload/image/mp210/mp210-39694-234687.jpg" style="width: 60px; height: 60px;">
+					</div>
+					<div class="col-md-2">
+						<img class="rounded-circle" src="https://news.hyundaimotorgroup.com/upload/image/mp210/mp210-39694-234687.jpg" style="width: 60px; height: 60px;">
+					</div>
+					<div class="col-md-2">
+						<img class="rounded-circle" src="https://news.hyundaimotorgroup.com/upload/image/mp210/mp210-39694-234687.jpg" style="width: 60px; height: 60px;">
+					</div>
+					<div class="col-md-2">
+						<img class="rounded-circle" src="https://news.hyundaimotorgroup.com/upload/image/mp210/mp210-39694-234687.jpg" style="width: 60px; height: 60px;">
+					</div>
+					<div class="col-md-2">
+						<img class="rounded-circle" src="https://news.hyundaimotorgroup.com/upload/image/mp210/mp210-39694-234687.jpg" style="width: 60px; height: 60px;">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Section: Private Placement Program -> End-->
+		<!-- Section 2 -->
+		<div class="row" id="section_2" style="margin-bottom: 15px;">
+			<div class="col-md-4">
+				<button class="btn btn-danger">Advisory Services</button>
+			</div>
+			<div class="col-md-4">
+				<button class="btn btn-danger">Investing</button>
+			</div>
+			<div class="col-md-4">
+				<button class="btn btn-danger">Trading</button>
+			</div>
+		</div>
+		<!-- Section 2 -->
+		<!-- Section 3 -->
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card">
+					<img src="https://news.hyundaimotorgroup.com/upload/image/mp210/mp210-39694-234687.jpg" style="width: 100%">
+					<p>
+						Hôm nay (22/2), học sinh tỉnh Quảng Nam quay lại trường học tập trung như thường lệ. Trước đó, một văn bản về việc cho học sinh toàn tỉnh nghỉ học đến hết ngày 21/3 được lan truyền trên mạng.
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<img src="https://news.hyundaimotorgroup.com/upload/image/mp210/mp210-39694-234687.jpg" style="width: 100%">
+					<p>
+						Hôm nay (22/2), học sinh tỉnh Quảng Nam quay lại trường học tập trung như thường lệ. Trước đó, một văn bản về việc cho học sinh toàn tỉnh nghỉ học đến hết ngày 21/3 được lan truyền trên mạng.
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<img src="https://news.hyundaimotorgroup.com/upload/image/mp210/mp210-39694-234687.jpg" style="width: 100%">
+					<p>
+						Hôm nay (22/2), học sinh tỉnh Quảng Nam quay lại trường học tập trung như thường lệ. Trước đó, một văn bản về việc cho học sinh toàn tỉnh nghỉ học đến hết ngày 21/3 được lan truyền trên mạng.
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- Section 3 End -->
+		<!-- Main End -->
+	</div>
+</body>
+</html>

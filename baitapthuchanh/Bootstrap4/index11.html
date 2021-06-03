@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap/jQuery Tutorial</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+	<div class="container">
+		<div class="card">
+			<div class="card-header bg-primary">
+				Calculator
+			</div>
+			<div class="card-body">
+				<div class="form-group">
+					<label for="x">X: </label>
+					<input type="number" name="name_x" id="x" class="form-control" placeholder="Enter x" value="">
+				</div>
+				<div class="form-group">
+					<label for="y">Y: </label>
+					<input type="number" name="name_y" id="y" class="form-control" placeholder="Enter y">
+				</div>
+				<button class="btn btn-success" onclick="clickPlus()">+</button>
+				<button class="btn btn-warning" name="button_minus" id="id_button_minus">-</button>
+				<button class="btn btn-danger">*</button>
+				<button class="btn btn-info">/</button>
+				<button class="btn" name="reset">Reset</button>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header bg-warning">
+				History
+			</div>
+			<div class="card-body">
+				<table class="table table-bordered table-hover">
+					<thead>
+						<tr>
+							<th>STT</th>
+							<th>X</th>
+							<th>Y</th>
+							<th>Phép Tính</th>
+							<th>Kết Quả</th>
+						</tr>
+					</thead>
+					<tbody id="result">
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var count = 0
+
+		function clickPlus() {
+			console.log('click + ...')
+			var x = $('#x').val()
+			var y = $('[name=name_y]').val()
+			var r = parseInt(x) + parseInt(y)
+			console.log(r)
+
+			// document.getElementById('result').innerHTML += `<tr>
+			// 				<td>${++count}</td>
+			// 				<td>${x}</td>
+			// 				<td>${y}</td>
+			// 				<td>+</td>
+			// 				<td>${r}</td>
+			// 			</tr>`
+			//Su dung jquery
+			// $('#result').append(`<tr>
+			// 				<td>${++count}</td>
+			// 				<td>${x}</td>
+			// 				<td>${y}</td>
+			// 				<td>+</td>
+			// 				<td>${r}</td>
+			// 			</tr>`)
+			$('#result').prepend(`<tr>
+							<td>${++count}</td>
+							<td>${x}</td>
+							<td>${y}</td>
+							<td>+</td>
+							<td>${r}</td>
+						</tr>`)
+			// $('#result').html('')
+			// $('#result').empty()
+		}
+
+		$('#id_button_minus').click(function() {
+			console.log('click - ...')
+		})
+
+		$('[name=reset]').click(function() {
+			// $('#x').val('')
+			// $('#y').val('')
+			$('input').val('')
+		})
+	</script>
+</body>
+</html>
